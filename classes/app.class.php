@@ -1,7 +1,7 @@
 <?php
 
   class app {
-
+    
     public function __construct() {
      $controller = 'homepageController';
      if(isset($_REQUEST['controller'])) {
