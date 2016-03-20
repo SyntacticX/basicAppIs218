@@ -3,9 +3,10 @@
   class homepageController extends controller {
 
     public function get() {
-      $this->html .= '<a href="index.php?controller=carController">CarController</a>';
+      var $carController;
+      $carController = '<a href="index.php?controller=carController">CarController</a>';
       session_start();
-      $this->html = $this->html . buildTable($_SESSION);
+      $this->html = $carController . buildTable($_SESSION);
     }
 
     public function post() {}
@@ -15,7 +16,8 @@
     public function delete() {}
 
     public function buildTable($array) {
-      return "<h1>Buttsex</h1>";
+
+      return '<h1>Buttsex</h1>';
       /*
       var $table;
       $this->table = '<table><thead><tr><th>';
