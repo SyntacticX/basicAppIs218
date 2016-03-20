@@ -5,7 +5,7 @@
     public function get() {
       $this->html .= '<a href="index.php?controller=carController">CarController</a>';
       session_start();
-      $this->html .= $_SESSION;
+      $this->html = $this->html . $_SESSION;
     }
 
     public function post() {}
