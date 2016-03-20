@@ -6,7 +6,8 @@
       var $carController;
       $carController = '<a href="index.php?controller=carController">CarController</a>';
       session_start();
-      $this->html = $carController . buildTable($_SESSION);
+      $this->html = $carController;
+      // . buildTable($_SESSION);
     }
 
     public function post() {}
